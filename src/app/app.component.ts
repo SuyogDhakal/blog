@@ -6,11 +6,29 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-currentVal: any;
 
-getVal(val:any)
-{
-  console.warn(val)
-  this.currentVal =val
+ //data ="suyog dhakal"
+ //parent to child
+ objdata =[
+  {
+    name:'Suyog',
+    age:24
+   },
+   {
+    name:'Sankalpa',
+    age:24
+   },
+   {
+    name:'Anjal',
+    age:28
+   }
+ ]
+ eb=[];
+
+ //child to parent
+parentComponent(data:any){
+console.warn(data)
+this.eb=data;
 }
 }
+

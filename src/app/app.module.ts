@@ -5,16 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { UsersModule } from './users/users.module';
-
+import { CommonModule } from '@angular/common';
+import { FormsModule }   from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
-    UserListComponent
+    UserListComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    UsersModule
+    UsersModule,
+    CommonModule,
+    FormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,11 @@
-<app-login></app-login>
-<app-signup></app-signup>
+<div *ngFor ="let data of objdata">
+    <app-user-list 
 
+    [heroobj]="data"
 
-<input type="text" #box />
-<button (click)="getVal(box.value)">Get Value</button>
-<h2>{{currentVal}}</h2>
+    (parentComponen)="parentComponent($event)"
+    >
+    </app-user-list>
+    <h1>{{eb}}</h1>
+
+</div>
